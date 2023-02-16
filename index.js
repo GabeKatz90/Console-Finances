@@ -89,28 +89,27 @@ const finances = [
 
 console.log("Financial Analysis");
 
-// Variables
-var totalNet = 0;
-var average = 0;
-var increase;
-var decrease;
-var sorted;
+let totalNet = 0;
+let average = 0;
+let increase;
+let decrease;
+let sorted;
 
-// Displaying the total of months
+// Displaying the total of months:
 console.log("The total of months: " + finances.length);
 
-// Displaying the net of profit/losses
+// Displaying the net of profit/losses:
 for (let i = 0; i < finances.length; i++) {
     totalNet = + finances[i][1];
 }
 console.log("The net of profit/losses: $" + totalNet);
 
-// Displaying the average -> rounding to nearest 100th
+// Displaying the average:
 average = totalNet / finances.length;
 average = average.toFixed(2);
 console.log("The average of the changes: $" + average);
 
-// Displaying the greatest increase in profits -> researched how to to sort multidimensional arrays :)
+// Displaying the greatest increase in profits:
 sorted = finances.sort((a, b) => b[1] - a[1]);
 increase = sorted[0];
 console.log(`The greatest increase in profits: ${increase[0]} ($${increase[1]})`);
