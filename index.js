@@ -87,7 +87,7 @@ const finances = [
     ['Feb-2017', 671099]
 ];
 
-console.log("Financial Analysis\n----------------------------");
+console.log("Financial Analysis");
 
 // Variables
 var totalNet = 0;
